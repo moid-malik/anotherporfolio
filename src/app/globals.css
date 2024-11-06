@@ -1,21 +1,35 @@
+@import url('https://fonts.cdnfonts.com/css/qalisha-signature-script');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@font-face {
+    font-family: font1;
+    src: url('./fonts/file.woff2');
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+    font-family: font2;
+    src: url('./fonts/file2.woff2');
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+    font-family: font3;
+    src: url('./fonts/file3.woff2');
+}
+@font-face {
+    font-family: font4;
+    src: url('./fonts/file4.woff2');
+}
+@font-face {
+    font-family: font5;
+    src: url('./fonts/file5.woff2');
+}
+@font-face {
+    font-family: font6;
+    src: url('./fonts/file6.woff2');
+}
+#page1-child{
+    position: relative;
+    perspective: 1000px;
+}
+#tilttext{
+    width: fit-content;
 }

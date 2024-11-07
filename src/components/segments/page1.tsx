@@ -1,13 +1,11 @@
-"use client";
-/* eslint-disable */
-import Page1bottom from "@/components/Page1bottom";
 import TiltText from "@/components/TiltText";
 import { useRef, useState, useEffect } from "react";
+import Page1bottom from "@/components/Page1bottom";
 
 const gsapPromise = import("gsap").then((module) => module.default);
 
-const Page1 = () => {
-  const tiltTextRef = useRef<any>(null);
+const Page1 = ()=>{
+const tiltTextRef = useRef<any>(null);
   const [xVal, setXVal] = useState(0);
   const [yVal, setYVal] = useState(0);
 
@@ -32,7 +30,6 @@ const Page1 = () => {
       });
     });
   }, [xVal, yVal]);
-
   return (
     <div className=" relative h-[45vw] text-white bg-white p-4">
       <div className="page1 relative h-full w-full  rounded-[35px]">
@@ -65,7 +62,6 @@ const Page1 = () => {
         </div>
       </div>
     </div>
-  );
+  )
 };
-
-export default Page1;
+export default Page1

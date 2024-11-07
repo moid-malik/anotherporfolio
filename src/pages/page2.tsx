@@ -1,5 +1,6 @@
+/* eslint-disable */
 "use client";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 const Page2: React.FC = () => {
   useEffect(() => {

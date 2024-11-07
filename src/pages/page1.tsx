@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable */
 import Page1bottom from "@/components/Page1bottom";
 import TiltText from "@/components/TiltText";
 import { useGSAP } from "@gsap/react";

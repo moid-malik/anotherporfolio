@@ -35,7 +35,7 @@
   src: url("./fonts/signatureitalic.woff");
 }
 .page1 {
-  background-image: url("../../public//abstract.png);
+  background-image: url("../../public//abstract.png");
 }
 #page1-child{
     position: relative;
@@ -52,5 +52,5 @@
     transform-origin: 100% 70%;
 }
 .page7{
-    background-image: url("../../public//abstract.png);
+    background-image: url("../../public/abstract.png");
 }

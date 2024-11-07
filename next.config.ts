@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
   eslint: {
@@ -7,14 +7,21 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  async redirects() {
-    return [
-      {
-        source: '/fonts/:path*',
-        destination: '/public/fonts/:path*',
-        permanent: true,
-      },
-    ]
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      config.module.rules.push({
+        test: /\.(woff2|woff|eot|ttf|otf)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[hash].[ext]',
+            outputPath: 'static/fonts/',
+            publicPath: '/_next/static/fonts/',
+          },
+        },
+      });
+    }
+    return config;
   },
 };
 

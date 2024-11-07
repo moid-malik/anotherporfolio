@@ -1,10 +1,8 @@
 "use client";
-import Header from "@/components/Header";
 import Page1bottom from "@/components/Page1bottom";
 import TiltText from "@/components/TiltText";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-// import TiltText from "@/components/TiltText";
 import { useRef, useState } from "react";
 
 const Page1 = () => {

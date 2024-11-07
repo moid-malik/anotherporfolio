@@ -1,15 +1,15 @@
 "use client";
 import { useEffect, useRef } from "react";
+import gsap from 'gsap'
+import {ScrollTrigger} from "gsap/ScrollTrigger";
 
 const Page2: React.FC = () => {
   useEffect(() => {
     const loadGsap = async () => {
-      const gsapModule = await import("gsap");
-      const ScrollTriggerModule = await import("gsap/ScrollTrigger");
 
-      gsapModule.gsap.registerPlugin(ScrollTriggerModule.ScrollTrigger);
+      gsap.registerPlugin(ScrollTrigger);
 
-      gsapModule.gsap.fromTo(
+      gsap.fromTo(
         ".rotateText",
         {
           transform: "rotateX(-90deg) translateZ(-400px)",

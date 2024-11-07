@@ -1,4 +1,3 @@
-// Page1.tsx
 "use client";
 import Page1bottom from "@/components/Page1bottom";
 import TiltText from "@/components/TiltText";
@@ -7,7 +6,7 @@ import gsap from "gsap";
 import { useRef, useState, MouseEvent } from "react";
 
 const Page1 = () => {
-  const tiltTextRef = useRef<HTMLDivElement>(null);
+  const tiltTextRef = useRef<HTMLDivElement | null>(null);
   const [xVal, setXVal] = useState<number>(0);
   const [yVal, setYVal] = useState<number>(0);
 
@@ -39,7 +38,7 @@ const Page1 = () => {
         </div>
         <div className="flex justify-between items-center h-full px-12">
           <div
-            onMouseMove={mouseMoveHandle}
+            onMouseMove={(e) => mouseMoveHandle(e)}
             id="page1-child"
             className="uppercase flex ml-8 h-full items-center"
           >

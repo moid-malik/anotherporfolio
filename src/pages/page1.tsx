@@ -37,8 +37,15 @@ const Page1 = () => {
   );
 
   return (
-    <div className=" relative overflow-hidden h-[45vw] text-white bg-white p-4">
-      <div className="bg-slate-950  h-full w-full  rounded-[35px]">
+    <div className=" relative h-[45vw] text-white bg-white p-4">
+      <div className="page1 relative h-full w-full  rounded-[35px]">
+      <div className="absolute top-[5%] left-[3%]">
+        <h1 className=" text-white text-6xl tracking-tighter font-semibold">
+          Moid
+        </h1>
+        <div className="w-[9.4vw] my-1 ml-1 h-[1px] bg-white "></div>
+      </div>
+        <div className="flex justify-between items-center h-full px-12">
         <div
           onMouseMove={(e) => {
             mouseMoveHandle(e);
@@ -48,7 +55,17 @@ const Page1 = () => {
         >
           <TiltText ref={tiltTextRef} />
         </div>
+        <div>
+        <video
+            autoPlay
+            muted
+            loop
+            className="h-[28vw] mr-16"
+            src="/sigma.webm"
+          />
+        </div>
         <Page1bottom />
+        </div>
       </div>
     </div>
   );

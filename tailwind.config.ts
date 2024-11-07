@@ -5,6 +5,7 @@ const colors = require("tailwindcss/colors");
 const {
   default: flattenColorPalette,
 } = require("tailwindcss/lib/util/flattenColorPalette");
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,20 +13,20 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    animation: {
-      shimmer: "shimmer 2s linear infinite",
-    },
-    keyframes: {
-      shimmer: {
-        from: {
-          backgroundPosition: "0 0",
-        },
-        to: {
-          backgroundPosition: "-200% 0",
+    extend: {
+      animation: {
+        spin: "spin 6s linear infinite",
+      },
+      keyframes: {
+        spin: {
+          from: {
+            transform: "rotate(0deg)",
+          },
+          to: {
+            transform: "rotate(360deg)",
+          },
         },
       },
-    },
-    extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
@@ -34,6 +35,7 @@ const config: Config = {
   },
   plugins: [addVariablesForColors],
 };
+
 function addVariablesForColors({ addBase, theme }: any) {
   let allColors = flattenColorPalette(theme("colors"));
   let newVars = Object.fromEntries(
@@ -44,4 +46,5 @@ function addVariablesForColors({ addBase, theme }: any) {
     ":root": newVars,
   });
 }
+
 export default config;

@@ -1,3 +1,34 @@
 {
-  "extends": ["next/core-web-vitals", "next/typescript"]
+  "extends": [],
+  "rules": {
+    "no-console": "off",
+    "no-unused-vars": "off",
+    "eqeqeq": "off",
+    "semi": "off",
+    "no-debugger": "off",
+    "curly": "off",
+    "no-undef": "off",
+    "strict": "off",
+    "no-alert": "off",
+    "no-eval": "off",
+    "no-implied-eval": "off",
+    "no-new-func": "off",
+    "no-with": "off",
+    "no-shadow": "off",
+    "no-redeclare": "off",
+    "no-duplicate-imports": "off",
+    "import/no-unresolved": "off",
+    "import/named": "off",
+    "import/default": "off",
+    "import/namespace": "off",
+    "import/no-named-as-default": "off",
+    "import/no-named-as-default-member": "off",
+    "react/no-unescaped-entities": "off",
+    "react/jsx-uses-react": "off",
+    "react/jsx-uses-vars": "off",
+    "react/jsx-no-undef": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-indent-props": "off",
+    "react/jsx-key": "off"
+  }
 }

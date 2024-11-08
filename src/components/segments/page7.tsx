@@ -14,13 +14,13 @@ const Page7 = () => {
             </h1>
           </div>
           <div className="relative h-full w-full">
-            <div className="lg:static sm:hidden hidden absolute top-[50px] left-[55%] animate-spin">
+            <div className="lg:block sm:hidden hidden absolute top-[50px] left-[55%] animate-spin">
               <Reactsvg />
             </div>
             <div></div>
           </div>
         </div>
-        <div className="text-white lg:mt-18 sm:mt-44 mt-44 flex lg:flex-row sm:flex-col flex-col lg:justify-between lg:items-end lg:text-start sm:text-center text-center">
+        <div className="text-white lg:mt-24 sm:mt-44 mt-44 flex lg:flex-row sm:flex-col flex-col lg:justify-between lg:items-end lg:text-start sm:text-center text-center">
   <div className="flex flex-col text-sm">
     <h3 className="font-[font6] uppercase tracking-tighter text-xl">contact now!</h3>
     <a href="mailto:moidmalikdev@gmail.com">moidmalikdev@gmail.com</a>

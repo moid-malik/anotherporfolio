@@ -40,7 +40,7 @@ const Page6 = () => {
               <div className="lg:text-3xl sm:text-md sm:mt-8 text-lg tracking-[0.6px] font-[helvetica]  uppercase">
                 sounds good?
               </div>
-              <h3 className="sm:text-sm">let{`'`}s own the code togather.</h3>
+              <h3 className="sm:text-sm">let{`'`}s own the code together.</h3>
             </div>
             <div>
               <a

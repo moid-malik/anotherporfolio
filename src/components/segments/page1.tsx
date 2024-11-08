@@ -32,7 +32,7 @@ const tiltTextRef = useRef<any>(null);
   }, [xVal, yVal]);
   return (
     <div className=" relative h-[45vw] text-white bg-white p-4">
-      <div className="page1 relative h-full w-full  rounded-[35px]">
+      <div className="page1 relative lg:h-full sm:h-screen lg:w-full sm:w-[ ]  rounded-[35px]">
       <div className="absolute top-[5%] left-[3%]">
         <h1 className=" text-white text-6xl tracking-tighter font-semibold">
           Moid

@@ -13,40 +13,29 @@ const Page6 = () => {
             <div className="">
               <h3 className="tracking-tighter text-xl text-white">PERSONALITY</h3>
               <p>
-                Business relationships build on trust and compassion vs how can I
-                get more for less +/-
+              I'm a focused and methodical developer who thrives on planning, tackling challenges with a clear structure, and bringing ideas to life with precision and creativity.
               </p>
             </div>
             <div className="">
               <h3 className="tracking-tighter text-xl text-white">APPROACH</h3>
               <p>
-                Full dive into personality, goals and objectives with transparency
-                of worq process vs template and unmanageable office routine +/-
+              I start by turning on my lofi playlist, planning the tech stack, structuring the app, designing the front end, building the back end, and deploying it to production.
               </p>
             </div>
             <div className="">
               <h3 className="tracking-tighter text-xl text-white">DESIGN</h3>
               <p>
-                Full dive into personality, goals and objectives with transparency
-                of worq process vs template and unmanageable office routine +/-
+              I have a keen eye for design, focusing on creating unique, creative, and user-friendly interfaces that are both visually appealing and functional.
               </p>
             </div>
             <div className="">
               <h3 className="tracking-tighter text-xl text-white">FOCUS</h3>
               <p>
-                Full dive into personality, goals and objectives with transparency
-                of worq process vs template and unmanageable office routine +/-
-              </p>
-            </div>
-            <div className="">
-              <h3 className="tracking-tighter text-xl text-white">APPROACH</h3>
-              <p>
-                Full dive into personality, goals and objectives with transparency
-                of worq process vs template and unmanageable office routine +/-
+              I have the ability to focus intensely on coding for hours without a break, immersing myself in the problem-solving process and consistently delivering high-quality results.
               </p>
             </div>
           </div>
-          <div className="mt-16 text-white leading-none flex justify-between items-center">
+          <div className="mt-24 text-white leading-none flex justify-between items-center">
             <div>
               <div className="text-3xl tracking-[0.6px] font-[helvetica]  uppercase">
                 sounds good?

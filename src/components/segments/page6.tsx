@@ -1,7 +1,7 @@
 const Page6 = () => {
     return (
       <div className="h-screen w-full p-4 mt-12">
-        <div className="relative w-full h-full flex flex-col bg-black rounded-[50px] lg:px-6 lg:py-20 sm:py-24 py-8 sm:px-8 px-8">
+        <div className="relative w-full h-full flex flex-col bg-black rounded-[50px] lg:px-6 lg:py-20 sm:py-2 py-8 sm:px-8 px-8">
           <video
             autoPlay
             muted

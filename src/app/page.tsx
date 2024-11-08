@@ -7,19 +7,17 @@ import Page5 from "@/components/segments/page5";
 import Page6 from "@/components/segments/page6";
 import Page7 from "@/components/segments/page7";
 
-
 export default function Home() {
-  
   return (
-    <main className="font-[font6] ">
-      <div className="main relative">
-      <Page1/>
-      <Page2/>
-      <Page3/>
-      <Page4/>
-      <Page5/>
-      <Page6/>
-      <Page7/>
+    <main className="font-[font6] h-full w-full">
+      <div className="main relative h-full w-full overflow-hidden">
+        <Page1 />
+        <Page2 />
+        <Page3 />
+        <Page4 />
+        <Page5 />
+        <Page6 />
+        <Page7 />
       </div>
     </main>
   );

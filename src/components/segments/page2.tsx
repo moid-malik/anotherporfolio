@@ -1,39 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
-import gsap from 'gsap'
-import {ScrollTrigger} from "gsap/ScrollTrigger";
-
 const Page2: React.FC = () => {
-  useEffect(() => {
-    const loadGsap = async () => {
-
-      gsap.registerPlugin(ScrollTrigger);
-
-      gsap.fromTo(
-        ".rotateText",
-        {
-          transform: "rotateX(-90deg) translateZ(-400px)",
-          opacity: 0.3,
-        },
-        {
-          transform: "rotateX(0deg) translateZ(0px)",
-          opacity: 1,
-          stagger: 0.2,
-          duration: 1.5,
-          ease: "power4.out",
-          scrollTrigger: {
-            trigger: ".rotateText",
-            start: "top 90%",
-            end: "top -600%",
-            scrub: true,
-          },
-        }
-      );
-    };
-
-    loadGsap();
-  }, []);
-
     return (
       <div className="section2 bg-white w-full text-center">
         <h3 className="font-[font3] pt-12 text-xl p-12 font-[300]">
@@ -54,8 +20,8 @@ const Page2: React.FC = () => {
         <div className="rotateText">
           <h1 className="text-[55vw] leading-[45vw] font-[font5]">CODE</h1>
         </div>
-        <div className="flex justify-between pt-8 px-[42vw]">
-          <a className="cursor-pointer">
+        <div className="flex justify-between lg:pt-8 sm:pt-12 pt-12 lg:px-[42vw] sm:px-[23vw] px-[23vw]">
+          <a href="mailto:moidmalikdev@gmail.com" className="cursor-pointer">
             <svg
               fill="#000000"
               width="30px"
@@ -66,7 +32,7 @@ const Page2: React.FC = () => {
               <path d="M22,5V9L12,13,2,9V5A1,1,0,0,1,3,4H21A1,1,0,0,1,22,5ZM2,11.154V19a1,1,0,0,0,1,1H21a1,1,0,0,0,1-1V11.154l-10,4Z" />
             </svg>
           </a>
-          <a className="cursor-pointer">
+          <a href="https://github.com/moid-malik" className="cursor-pointer">
             <svg
               width="30px"
               height="30px"
@@ -98,7 +64,7 @@ const Page2: React.FC = () => {
               </g>
             </svg>
           </a>
-          <a className="cursor-pointer">
+          <a href="https://wa.me/+923126968917" className="cursor-pointer">
             <svg
               fill="#000000"
               width="30px"

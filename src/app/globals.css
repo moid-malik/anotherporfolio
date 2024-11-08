@@ -33,24 +33,26 @@
 @font-face {
   font-family: signatureItalic;
   src: url("/fonts/signatureitalic.woff");
-}.page1 {
-    background-image: url("/abstract.png");
-  }
-  #page1-child {
-    position: relative;
-    perspective: 1000px;
-  }
-  #section2 {
-    position: relative;
-    perspective: 2000px;
-  }
-  #tilttext {
-    width: fit-content;
-  }
-  .rotateText {
-    transform-origin: 100% 70%;
-  }
-  .page7 {
-    background-image: url("/abstract.png");
-  }
+}
+.page1 {
+  background-image: url("/abstract.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#page1-child {
+  position: relative;
+  perspective: 1000px;
+}
   
+#tilttext {
+  width: fit-content;
+}
+.rotateText {
+  transform-origin: 100% 70%;
+}
+.page7 {
+  background-image: url("/abstract.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}

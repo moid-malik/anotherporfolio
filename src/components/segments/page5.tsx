@@ -13,8 +13,8 @@ import {
 
  function Page5() {
   return (
-    <div className=" w-full">
-    <BentoGrid className="max-w-4xl mx-auto ">
+    <div className=" lg:w-full">
+    <BentoGrid className="lg:max-w-4xl w-[80vw] lg:mx-auto ">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -22,7 +22,7 @@ import {
           description={item.description}
           header={item.header}
           icon={item.icon}
-          className={i == 5 ? "row-span-2":'' }
+          className={ i == 5 ? "row-span-2":'' }
         />
       ))}
     </BentoGrid>

@@ -5,7 +5,7 @@ const Page7 = () => {
     <div id="contact" className="h-screen w-full p-4">
       <div className="h-full page7 w-full bg-black rounded-[50px] lg:px-20 lg:py-8 sm:px-4 px-4">
         <div className="flex justify-between">
-          <div className="font-[font5] text-white lg:text-[12rem] sm:text-[8rem] text-[8rem] lg:leading-[15rem] sm:leading-[2rem] leading-[9rem] lg:mt-0 mt-14">
+          <div className="font-[font5] text-white lg:text-[12rem] sm:text-[8rem] text-[8rem] lg:leading-[15rem] sm:leading-[12rem] leading-[9rem] lg:mt-0 mt-14">
             <h1>
               GOT <span className="text-gray-500">AN</span>
             </h1>
@@ -20,7 +20,7 @@ const Page7 = () => {
             <div></div>
           </div>
         </div>
-        <div className="text-white lg:mt-24 sm:mt-44 mt-44 flex lg:flex-row sm:flex-col flex-col lg:justify-between lg:items-end lg:text-start sm:text-center text-center">
+        <div className="text-white lg:mt-24 sm:mt-[39vh] mt-44 flex lg:flex-row sm:flex-col flex-col lg:justify-between lg:items-end lg:text-start sm:text-center text-center">
   <div className="flex flex-col text-sm">
     <h3 className="font-[font6] uppercase tracking-tighter text-xl">contact now!</h3>
     <a href="mailto:moidmalikdev@gmail.com">moidmalikdev@gmail.com</a>

@@ -14,6 +14,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        sm: { max: "460px" },
+      },
       animation: {
         spin: "spin 6s linear infinite",
       },
